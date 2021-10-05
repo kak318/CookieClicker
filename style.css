@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+.btn {
+  border: none; /* Remove borders */
+  color: black; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  border-radius: 5px;
+  right: 100%;
+  font-family: 'Balsamiq Sans', cursive;
+  display: flex;
+}
+.cookie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: 'Balsamiq Sans', cursive;
+}

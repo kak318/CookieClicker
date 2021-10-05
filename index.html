@@ -1,0 +1,110 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<script src="script.js">
+
+	</script>
+	<p>Score: <span id="score"></span></p>
+    <img src="assets/cookie.png" onclick="addToScore(1)">
+  </body>
+</html>-->
+<!DOCTYPE Html>
+<head>
+
+<title>Cookie Clicker</title>
+
+</head>
+<body>
+<h1>Cookie Clicker</h1>
+<h3 id="coins"></h3>
+<h4 id="coinsPS"></h3>
+<img onclick ="gainCoin()" src="assets/cookie.png" style="display: flex;justify-content: center;align-items: center;">
+<button class="btn" onclick ="getCoinsPS()">Kup kliknięcia na sekundę <span id="coinsBtn"></span></button>
+<button class="btn" onclick ="getCoinsMTHR()">Kup babcię <span id="mthrBtn"></span></button>
+<button class="btn" onclick ="getCoinsFCTR()">Kup fabrykę <span id="fctrBtn"></span></button>
+<button class="btn" onclick ="getCoinsPIZZA()">Kup pizze <span id=""></span></button>
+<link rel="stylesheet" href="style.css">
+
+<script>
+var coins = 0;
+var coinsPS = 0;
+var coinsPC = 1;
+var clickNUM = 50;
+var mthrNUM = 100;
+var fctrNUM = 1000;
+
+document.getElementById("coinsBtn").innerHTML = " (" + clickNUM + ")"; 
+document.getElementById("mthrBtn").innerHTML = " (" + mthrNUM + ")"; 
+document.getElementById("fctrBtn").innerHTML = " (" + fctrNUM + ")"; 
+
+function gainCoin() {
+
+coins += coinsPC;
+
+}
+
+setInterval(function renderCoins() {
+
+document.getElementById("coins").innerHTML = "Pieniądze: " + coins;
+
+})
+
+
+setInterval(function renderCoinsPS() {
+
+document.getElementById("coinsPS").innerHTML = "Pieniądze na sekundę: " + 
+coinsPS;
+
+})
+
+function getCoinsPS(){
+
+if (coins >= clickNUM){
+coinsPS += 1;
+coins -= clickNUM;
+clickNUM += 10;
+document.getElementById("coinsBtn").innerHTML = "(" + clickNUM + ")"; 
+} else if (coins >= fctrNUM){
+coinsPS += 1;
+coins -= fctrNUM;
+fctrNUM += 10;
+document.getElementById("coinsBtn").innerHTML = "(" + fctrNUM + ")"; 
+} else if (coin >= mthrNUM) {
+coinsPS += 5;
+coins -= mthrNUM;
+mthrNUM += 10;
+document.getElementById("coinsBtn").innerHTML = "(" + mthrNUM + ")"; 
+} else {
+alert("Nie masz wystarczająco pieniędzy")
+}
+setInterval(function coinPS(){
+
+coins += coinsPS;
+
+}, 1000)
+
+}
+
+function getCoinsPS(){
+
+if (coins >= mthrNUM){
+
+
+
+
+function getCoinsPS(){
+
+
+
+
+
+</script>
+</body>
